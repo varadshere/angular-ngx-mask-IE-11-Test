@@ -10,15 +10,14 @@
     "@angular/platform-browser": "8.2.14",
     "@angular/platform-browser-dynamic": "8.2.14",
     "@angular/router": "8.2.14",
-    "core-js": "^3.6.4",
     "ngx-mask": "8.1.6",
     "rxjs": "6.5.4",
     "zone.js": "0.9.1"
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve -disable-host-check --no-live-reload",
+    "build": "ng build --prod --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
